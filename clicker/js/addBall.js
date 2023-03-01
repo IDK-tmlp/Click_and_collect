@@ -21,7 +21,7 @@ function addHyper() {
     money -= 100;
     nbHyperball += 1;
     document.getElementById("hyperball").innerHTML =
-      "Hyperball : " + nbHyperball + " (50 money)";
+      "Hyperball : " + nbHyperball + " (100 money)";
     document.getElementById("money").innerHTML = "Money : " + money;
   }
 }

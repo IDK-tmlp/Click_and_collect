@@ -1,10 +1,12 @@
 function pull(nombre) {
-  for (let i = 0; i < nombre; i++) {
-    if (money >= 1000) {
-      alert("PULLL");
+  if (money >= nombre * 1000) {
+    let tab = [];
+    for (let i = 0; i < nombre; i++) {
+      tab.push(i);
       money -= 1000;
-    } else {
-      alert("Not enought money");
     }
+    alert(`You pulled ${tab}`);
+  } else {
+    alert("Not enougth money");
   }
 }
