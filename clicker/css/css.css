@@ -1,0 +1,50 @@
+header {
+	background-image: url(../images/bghead.jpeg);
+	height: 100px;
+	margin-bottom: 5px;
+}
+
+header h1 {
+	color :white;
+	font-size: 30pt;
+	text-align: center;
+	padding-top: 25px;
+}
+
+.sideleft{
+	display: inline-block;
+	background-color: lightgrey;
+	float: left;
+	width: 15%;
+	height: 1000px;
+	margin-right: 1%; 
+	overflow: hidden;
+}
+.sideright{
+	display: inline-block;
+	background-color: lightgrey;
+	float: right;
+	width: 15%;
+	height: 1000px;
+	margin-left: 1%;
+}
+.main{
+	display: inline-block;
+	float: left;
+	width: 68%;
+	height: 1000px;
+	overflow: hidden;
+	background: lightblue;
+	text-align: center;
+}
+
+.affiche {
+	text-align: center;
+}
+
+.button{
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px;
+}

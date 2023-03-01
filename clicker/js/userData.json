@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "userName": "Testman",
+      "money": 0,
+      "nbPokeball": 0,
+      "nbSuperball": 0,
+      "nbHyperball": 0
+    }
+  ]
+}

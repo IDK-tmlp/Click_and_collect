@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Le jeu</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/css.css" />
+  </head>
+  <body onload="loadData();">
+    <header>
+      <h1>PokeClicker Fast Shooting/Gacha</h1>
+    </header>
+    <section class="sideleft wtext">
+      <div class="affiche" id="money">Money : 0</div>
+      <div class="affiche" id="income"></div>
+      <br />
+      <button
+        id="pokeball"
+        class="button"
+        style="visibility: hidden"
+        onclick="addPoke();"
+      >
+        Pokeball : 0 (25 money)
+      </button>
+      <br />
+      <button
+        id="superball"
+        class="button"
+        style="visibility: hidden"
+        onclick="addSuper();"
+      >
+        Superball : 0 (50 money)
+      </button>
+      <br />
+      <button
+        id="hyperball"
+        class="button"
+        style="visibility: hidden"
+        onclick="addHyper();"
+      >
+        Hyperball : 0 (100 money)
+      </button>
+      <br />
+      <br />
+      <section class="gacha">
+        <button class="button" onclick="pull(1)">Pull</button>
+      </section>
+    </section>
+
+    <div class="main wtext">
+      <img
+        src="https://www.freeiconspng.com/uploads/pokemon-png-14.png"
+        width="500"
+        onclick="clicke();"
+      />
+      <!-- <img
+        src="https://www.freeiconspng.com/uploads/pokeball-pokemon-ball-picture-11.png"
+        width="500"
+        onclick="clicke();update();"
+      /> -->
+    </div>
+
+    <div class="sideright wtext">
+      <button class="button" onclick="saveData();">Save</button>
+      <button class="button" onclick="loadData();">Load</button>
+      <button class="button" onclick="resetData();">Reset</button>
+    </div>
+    <script src="../js/dataManagement.js"></script>
+    <script src="../js/addBall.js"></script>
+    <script src="../js/update.js"></script>
+    <script src="../js/gacha.js"></script>
+    <script type="text/javascript">
+      //import data from "./userData.json" assert { type: "JSON" };
+      //console.log(data);
+      var money = 0;
+      var nbPokeball = 0;
+      var nbSuperball = 0;
+      var nbHyperball = 0;
+      var gainPB = 0.125 / 10;
+      var gainSB = 0.25 / 10;
+      var gainHB = 0.5 / 10;
+      var click = 0;
+
+      function clicke() {
+        click += 1;
+      }
+    </script>
+  </body>
+</html>
