@@ -1,0 +1,8 @@
+{
+    "drops": [
+        { "name": "Salameche", "rarity": "C", "link": "lien" },
+        { "name": "Reptincel", "rarity": "R", "link": "lien" },
+        { "name": "Dracaufeu", "rarity": "SR", "link": "lien" },
+        { "name": "Mew", "rarity": "SSR", "link": "lien" }
+    ]
+}
